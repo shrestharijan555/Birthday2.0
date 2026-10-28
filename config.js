@@ -30,7 +30,7 @@ const CONFIG = {
   // One message per page (a page = two photos). Extra messages are ignored,
   // missing ones are left blank.
   messages: [
-    "Happy birthday, my love ♥",
+    "Thank you for being born, My Love ♥",
     "As long as you’re smiling, I’m happy.",
     "Stay happy, my love."
   ],
