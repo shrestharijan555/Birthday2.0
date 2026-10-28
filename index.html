@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stars"></canvas>
+<div id="hearts" aria-hidden="true"></div>
+<button id="mute" hidden aria-label="Mute music">♪</button>
+
+<section class="scene active" id="gate">
+  <button class="btn big" id="start">Tap to begin ♥</button>
+</section>
+
+<section class="scene" id="rain">
+  <canvas id="rainCanvas"></canvas>
+  <div id="rainText"></div>
+</section>
+
+<section class="scene" id="bday">
+  <div class="stack">
+    <h1 id="cakeTitle"></h1>
+    <div class="cake" aria-hidden="true">
+      <div class="candles"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="tier t2"></div><div class="tier t1"></div><div class="plate"></div>
+    </div>
+    <h2 id="cakeName"></h2>
+    <button class="btn" id="giftBtn"></button>
+  </div>
+</section>
+
+<section class="scene" id="book">
+  <button class="bookbtn" id="bookBtn" aria-label="Open the book">
+    <span class="inside"></span>
+    <span class="cover"><span class="bigheart">♥</span></span>
+  </button>
+</section>
+
+<section class="scene" id="spread">
+  <div class="pagewrap">
+    <div class="note" id="note"></div>
+    <div class="pics" id="pics"></div>
+    <div class="nav">
+      <button class="btn small" id="back">Back</button>
+      <span id="count"></span>
+      <button class="btn small" id="next">Next</button>
+    </div>
+  </div>
+</section>
+
+<section class="scene" id="finale">
+  <div id="heart"></div>
+  <p id="finalMsg"></p>
+  <button class="btn small" id="replay">Replay</button>
+</section>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
